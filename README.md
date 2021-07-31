@@ -18,7 +18,7 @@ jupyter nbextension enable nb-themify/main
 ```
 
 ## Usage
-- Select Themefify on Main Menu
+- Select Themefy on Main Menu
 
 ![Pin Cell](themify.gif "Pin Cell")
 
