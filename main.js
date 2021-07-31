@@ -12,8 +12,12 @@ define(["require",
     const theme_list = [{
         name: 'MofDAC 1',
         css: requirejs.toUrl("./css/mofdac.css"),
-        fonts: ["https://fonts.googleapis.com/css2?family=Poppins&display=swap"]
-    }];
+        fonts: ["https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"]
+    }];    
+
+    const read_theme_from_config = function () {
+        return IPython.notebook.metadata.themify || { theme: 'default' };
+    };    
 
     const menu_item = (text, clickHandler) => {
         return $(`<li><a href="#" class="menu-shortcut-container"><span class="action mofdaclink">${text}</span></a><ul class="dropdown-menu"><li>`).click(clickHandler)
@@ -31,14 +35,13 @@ define(["require",
         }
 
         dropdown_menu.append(menu_item("Jupyter Default", reset_css));
-
         menu_bar.append(dropdown);
     }
 
     const reset_css= (event) => {
         $("#mofdac-theme").remove();
         $('.mofdaclink').css('font-weight','normal');
-        $(event.target).css('font-weight','bold');
+        if (event) $(event.target).css('font-weight','bold');
     }
 
     const init_css = (event, theme) => {        
@@ -47,10 +50,20 @@ define(["require",
         for (const font of theme.fonts) {
             $('head').append($(`<link rel="stylesheet" href="${font}"/>`));                     
         }
+
+        IPython.notebook.metadata['themify'] = { theme: theme.name }
     }     
 
-    const load_ipython_extension = () => {
+    const load_ipython_extension = () => {        
         init_toolbar();        
+
+        // set theme from config
+        const config = read_theme_from_config();        
+        if (config.theme != 'default') {
+            const found = theme_list.find(item=>item.name == config.theme);
+            console.log(found);
+            if (found) init_css(undefined, found);                             
+        }
     };
 
     return {

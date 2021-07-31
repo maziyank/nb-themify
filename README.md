@@ -23,5 +23,3 @@ jupyter nbextension enable nb-themify/main
 ![Pin Cell](themify.gif "Pin Cell")
 
 
-## Working on Progress:
-- Persist theme state on notebook.

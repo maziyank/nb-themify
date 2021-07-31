@@ -1,3 +1,5 @@
+/* MOFDAC THEME 1 */
+
 .rendered_html h1 {
     color: white;
     background: rgb(12,12,119);
@@ -14,7 +16,15 @@
     padding: 10px; 
 }
 
-.rendered_html h3, .rendered_html h4, .rendered_html h5{
+.rendered_html h4, .rendered_html h5{
+    color: #0c0c77;
+}
+
+.rendered_html h3 {
+    background: rgb(175,198,255);
+    background: linear-gradient(90deg, rgba(175,198,255,0.48783263305322133) 0%, rgba(255,255,255,1) 100%);
+    padding: 8px;
+    border-radius:5px;
     color: #0c0c77;
 }
 
@@ -28,7 +38,7 @@ div.cell.selected, div.cell.selected.jupyter-soft-selected {
 
 #notebook-container {
     border-radius: 10px;
-    font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .rendered_html code {
@@ -45,4 +55,17 @@ hr{
 
 blockquote {
     border-left: 5px solid #2c22de;
+    background: #e9efff;
+}
+
+.rendered_html tbody tr:nth-child(even) {
+    background: #fff;
+}
+
+.rendered_html tbody tr:nth-child(odd) {
+    background: #e9efff;
+}
+
+.rendered_html thead{
+    border-bottom: 1px solid #0f0e80;   
 }
