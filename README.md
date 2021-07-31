@@ -20,5 +20,8 @@ jupyter nbextension enable nb-themify/main
 ## Usage
 - Select Themefify on Main Menu
 
+![Pin Cell](themify.gif "Pin Cell")
+
+
 ## Working on Progress:
 - Persist theme state on notebook.
