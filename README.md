@@ -18,5 +18,7 @@ jupyter nbextension enable nb-themify/main
 ```
 
 ## Usage
-- Select a cell that you want to pinned.
-- Click pin cell icon in the toolbar
+- Select Themefify on Main Menu
+
+## Working on Progress:
+- Persist theme state on notebook.
