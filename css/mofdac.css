@@ -1,0 +1,48 @@
+.rendered_html h1 {
+    color: white;
+    background: rgb(12,12,119);
+    background: linear-gradient(90deg, rgba(12,12,119,1) 0%, rgba(44,34,222,1) 70%, rgba(255,226,0,1) 100%);
+    border-radius:10px;
+    padding: 20px; 
+}
+
+.rendered_html h2 {
+    color: white;
+    background: rgb(12,12,119);
+    background: linear-gradient(90deg, rgba(12,12,119,1) 0%, rgba(44,34,222,1) 70%, rgba(255,226,0,1) 100%);
+    border-radius:5px;
+    padding: 10px; 
+}
+
+.rendered_html h3, .rendered_html h4, .rendered_html h5{
+    color: #0c0c77;
+}
+
+div.cell.selected:before, div.cell.selected.jupyter-soft-selected:before{
+    background: #0c0c77;
+}
+
+div.cell.selected, div.cell.selected.jupyter-soft-selected {
+    border-color: #f0e8e8;
+}
+
+#notebook-container {
+    border-radius: 10px;
+    font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.rendered_html code {
+    background-color: rgb(244 240 209);
+}
+
+hr{
+    display: none;
+}
+
+.rendered_html :link{
+    font-weight: bold;
+}
+
+blockquote {
+    border-left: 5px solid #2c22de;
+}
