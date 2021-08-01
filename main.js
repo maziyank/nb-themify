@@ -10,8 +10,13 @@ define(["require",
     'use strict';
 
     const theme_list = [{
-        name: 'MofDAC 1',
+        name: 'MOF-DAC 1',
         css: requirejs.toUrl("./css/mofdac.css"),
+        fonts: ["https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"]
+    },
+    {
+        name: 'MOF-DAC 2',
+        css: requirejs.toUrl("./css/mofdac2.css"),
         fonts: ["https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"]
     }];    
 
