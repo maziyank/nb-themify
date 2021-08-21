@@ -3,4 +3,4 @@ Compatibility: 3.x, 4.x, 5.x
 Name: NB Themify
 Main: main.js
 Link: README.md
-Description: Themeify your notebook
+Description: Themeify your jupyter notebook

@@ -1,0 +1,74 @@
+/* MOFDAC THEME 1 */
+
+.rendered_html h1 {
+    color: rgb(255 255 255);
+    border-bottom: 6px solid rgb(0, 255, 135);
+    border-bottom-color: linear-gradient(to right, rgb(235, 255, 0), rgb(0, 255, 135));
+    background: #37003c;
+    border-radius:10px;
+    padding: 20px;
+}
+
+.rendered_html h2 {
+    color: white;
+    background: #37003c;
+    /* border-bottom-color: rgb(0, 255, 135); */
+    border-bottom: 4px solid;
+    border-radius:5px;
+    padding: 10px;
+}
+
+.rendered_html h4, .rendered_html h5{
+    color: #0c0c77;
+}
+
+.rendered_html h3 {
+    background: rgb(175,198,255);
+    background: rgb(239, 239, 239);
+    padding: 8px;
+    border-radius:5px;
+    color: #37003c;
+}
+
+div.cell.selected:before, div.cell.selected.jupyter-soft-selected:before{
+    background: rgba(0, 111, 55, 0.9);
+}
+
+div.cell.selected, div.cell.selected.jupyter-soft-selected {
+    border-color: #f0e8e8;
+}
+
+#notebook-container {
+    border-radius: 10px;
+    font-family: Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.rendered_html code {
+    background-color: rgb(244 240 209);
+}
+
+hr{
+    display: none;
+}
+
+.rendered_html :link{
+    font-weight: bold;
+}
+
+blockquote {
+    border-left: 5px solid #2c22de;
+    background: #e9efff;
+}
+
+.rendered_html tbody tr:nth-child(even) {
+    background: #fff;
+}
+
+.rendered_html tbody tr:nth-child(odd) {
+    background: #e9efff;
+}
+
+.rendered_html thead{
+    border-bottom: 1px solid #0f0e80;   
+}
+

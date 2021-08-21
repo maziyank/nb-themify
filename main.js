@@ -19,7 +19,13 @@ define(["require",
         name: 'MOF-DAC 2',
         css: requirejs.toUrl("./css/mofdac2.css"),
         fonts: ["https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"]
-    }];    
+    },
+    {
+        name: 'MOF-DAC 3',
+        css: requirejs.toUrl("./css/mofdac3.css"),
+        fonts: ["https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"]
+    }
+    ];    
 
     // read notebook metadata, if not present set to default
     const read_theme_from_config = function () {
