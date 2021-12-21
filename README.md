@@ -1,7 +1,7 @@
 # Themify Extension
 ---
 
-This extension let you make over view of your boring jupyter notebook.
+This extension let you make over your boring jupyter notebook.
 
 ## Install Extension
 
